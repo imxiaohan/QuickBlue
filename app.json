@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/device/device"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#4A90E2",
+    "navigationBarBackgroundColor": "#4A90E2",
+    "navigationBarTitleText": "Quick Blue",
+    "navigationBarTextStyle": "#FFFFFF"
+  },
+  "debug": false
+}

@@ -1,0 +1,58 @@
+/**index.wxss**/
+.top {
+  display: flex;
+  width: 100%;
+  height: 65rpx;
+  background-color: #000000;
+}
+
+.top view {
+  width: 50%;
+  font-size: 28rpx;
+  color: #ffffff;
+  line-height: 2.5;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.top .msg {
+  text-align: right;
+}
+
+.btn1 {
+  width: 60%;
+  margin-top: 350rpx;
+}
+
+.flex-wrp{
+  display:flex;
+}
+
+.flex-item {
+  width: 100%;
+}
+
+.flex-item .title {
+  margin: 10rpx 20rpx 0;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.flex-item .subtitle {
+  font-size: 24rpx;
+  color: #808080;
+  margin: 0rpx 20rpx 10rpx;
+}
+
+.flex-item-0{
+  background-color: #FFFFFF;
+}
+
+.flex-item-1{
+  background-color: #F2F2F2;
+}
+
+wx-button:after {
+  border: 1px solid #F00;
+  background: none;
+}

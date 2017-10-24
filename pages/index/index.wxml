@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top" style="flex-direction:row;">
+    <view>搜索到附近的蓝牙设备 <text wx:if="{{count>0}}">({{count}})</text></view>
+    <view class="msg">{{msg}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:column">
+      <button style="width:300px;height:120px;background:none" open-type="contact" size="20" session-from="weapp">客服消息</button>
+      <!--
+      <view class="flex-item flex-item-0">
+        <view class="title">Tango</view>
+        <view class="subtitle">1111</view>
+      </view>
+      <view class="flex-item flex-item-1">
+        <view class="title">Tango</view>
+        <view class="subtitle">1111</view>
+      </view>
+      -->
+      <view class="flex-item flex-item-{{idx%2}}"
+            wx:key="{{item.deviceId}}"
+            wx:for="{{devices}}"
+            wx:for-index="idx"
+            wx:for-item="item"
+            bindtap="btnViewTap"
+            data-deviceid="{{item.deviceId}}"
+            data-devicename="{{item.name}}"
+            data-advertisData="{{item.advertisServiceUUIDs}}">
+        <view class="title">{{item.name}} (RSSI:{{item.RSSI}})</view>
+        <view class="subtitle">{{item.deviceId}}</view>
+      </view>
+  </view>
+</view>
